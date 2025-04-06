@@ -34,7 +34,7 @@ function Footer() {
           <br />
           <a href="" className="d-inline-block mb-3 FooterSub text-muted">Press & media</a>
           <br />
-          <a href="" className="d-inline-block mb-3 FooterSub text-muted">Zerodha cares (CSR)</a>
+          <a href="" className="d-inline-block mb-3 FooterSub text-muted">StockNest cares (CSR)</a>
           <br />
           
         </div>
