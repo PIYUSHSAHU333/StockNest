@@ -2,9 +2,9 @@ import React from 'react';
 
 function Awards() {
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 mb-5">
 
-          <div className="row">
+          <div className="row mb-5">
             <div className="col-lg-6 col-sm-3" >
               <img src="media/images/largestBroker.svg" className="mt-4" alt="#" />
             </div>
