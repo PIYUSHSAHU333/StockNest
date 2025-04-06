@@ -9,6 +9,7 @@ import SignUpPage from './LandingPage/SignUp/SignUpPage';
 import SupportPage from './LandingPage/Support/SupportPage';
 import Navbar from './LandingPage/Navbar';
 import Footer from './LandingPage/Footer';
+import NotFound from './LandingPage/NotFound';
 
 
 createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
       <Route path='/Support' element={<SupportPage/>}></Route>
       <Route path='/SignUp' element={<SignUpPage/>}></Route>
       <Route path='/products' element={<ProductsPage/>}></Route>
+      <Route path='*' element={<NotFound/>}></Route>
   </Routes>
   <Footer/>
   </BrowserRouter>
