@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg border-bottom  ">
       <div class="container p-2 ">
-        <a href="" className="navbar-brand">
+        <a href="/" className="navbar-brand">
           <img src="media/images/logo.svg" alt="#" style={{ width: "25%" }} />
         </a>
 
