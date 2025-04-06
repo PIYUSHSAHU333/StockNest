@@ -1,5 +1,6 @@
 import React from "react";
 import '../index.css'
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg border-bottom  ">
@@ -12,30 +13,30 @@ function Navbar() {
             <form action="">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-link active" aria-current="page" to="/SignUp">
                 Signup
-              </a>
+              </Link>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-link active" aria-current="page" to="/About">
                 About
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">
+              <Link class="nav-link active" to="/products">
                 Products
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">
+              <Link class="nav-link active" to="/Pricing">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">
+              <Link class="nav-link active" to="/Support">
                Support
-              </a>
+              </Link>
             </li>
           </ul>
           </form>

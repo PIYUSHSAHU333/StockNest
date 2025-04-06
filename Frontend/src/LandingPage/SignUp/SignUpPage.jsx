@@ -6,9 +6,9 @@ import Footer from '../Footer';
 function SignupPage() {
     return ( 
         <>
-        <Navbar />
+        
         <Signup />
-        <Footer />
+        
         </>
      );
 }

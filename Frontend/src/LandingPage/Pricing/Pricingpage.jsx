@@ -9,10 +9,10 @@ function Pricingpage() {
     return ( 
 
         <>
-        <Navbar/>
+       
         <Hero />
         <Brokerage />
-        <Footer />
+        
         </>
      );
 }
