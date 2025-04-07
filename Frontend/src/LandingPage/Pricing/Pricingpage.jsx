@@ -1,20 +1,18 @@
-import React from 'react';
-import Navbar from '../Navbar';
-import Hero from './Hero';
-import Brokerage from './Brokerage';
-import Footer from '../Footer';
+import React from "react";
 
+import Hero from "./Hero";
+import Brokerage from "./Brokerage";
+
+import OpenAcc from "../OpenAcc";
 
 function Pricingpage() {
-    return ( 
-
-        <>
-       
-        <Hero />
-        <Brokerage />
-        
-        </>
-     );
+  return (
+    <>
+      <Hero />
+      <OpenAcc />
+      <Brokerage />
+    </>
+  );
 }
 
 export default Pricingpage;
