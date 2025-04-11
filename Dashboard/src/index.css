@@ -94,6 +94,7 @@ body{
     flex-basis: 68%;
     /* border: solid 1px red; */
     height: 100%;
+    overflow-y: auto;
     box-sizing: border-box;
     padding: 3% 2%;
 }
@@ -101,10 +102,38 @@ body{
     flex-basis: 32%;
     /* border: solid 1px black; */
     height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 1px rgb(236, 235, 235);
 
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.search{
+    border: none;
+    width: 100%;
+    color: rgb(241, 241, 241);
+    font-size: 0.9rem;
+    font-weight: 400;
+    height: 6%;
+    padding: 15px 20px;
+    border-bottom: 0.8px solid rgb(235, 234, 234);
+}
+.counts{
+    position: absolute;
+    right: 20px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(177, 177, 177);
 }
 /* summary component  */
 .username h6{
+    margin-top: 0px;
     font-size: 1.5rem;
     color: rgb(83, 83, 83);
     font-weight: 400;
@@ -118,8 +147,9 @@ body{
     margin-bottom: 5%;
 }
 .data .first h3{
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1px;
     color: rgb(71, 71, 71);
 }
 
@@ -135,15 +165,167 @@ body{
 }
 
 .data .second p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    color: rgb(136, 136, 136);
 
+}
+
+.data .first p{
+    font-size: 0.8rem;
+    color: rgb(136, 136, 136);
 }
 
 .data .second p span{
     margin-left: 5%;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: rgb(100, 100, 100);
 }
 
 .data hr{
     height: 70px;
     border-left: 0.6px solid rgb(243, 242, 242);
 }
+
+.data .first .profit{
+    color: rgb(72, 194, 55);
+}
+
+.data .first small{
+    font-size: 0.8rem;
+    color: rgb(72, 194, 55);
+}
+
+.section{
+    padding-bottom: 2%;
+}
+.section span p{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+/* orders component */
+.orders{
+    /* border: solid 1px black; */
+    height: 100%;
+    width: 100% ;
+}
+.no-orders{
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-orders p{
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+    font-weight: 300;
+    margin-top: 2%;
+}
+.btn{
+    text-decoration: none;
+    padding: 5px 12px;
+    background-color: rgb(77, 77, 248);
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 2%;
+}
+.btn:hover{
+    background-color: rgb(110, 110, 253);
+}
+
+.no-orders i{
+    font-size: 55px;
+    display: block;
+    color: rgb(173, 173, 173);
+    margin-top: 1%;
+}
+
+/* positions component  */
+.title{
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: rgb(71, 71, 71);
+    margin-bottom: 2%;
+}
+
+.order-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.order-table tr{
+    border-top: solid 1px #f1f1f1;
+    border-bottom: solid 1px #f1f1f1;
+}
+.order-table th{
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 15px 10px;
+    color: rgb(145, 145, 145);
+}
+.order-table td{
+text-align: right;
+padding: 10px 10px;
+font-size: 0.9rem;
+font-weight: 400;
+color: rgb(73, 73, 73);
+}
+.order-table tr th:first-child,
+.order-table tr td:first-child{
+    text-align: left;
+}
+.order-table tr th:nth-child(1),
+.order-table tr th:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.order-table tr td:nth-child(1),
+.order-table tr td:nth-child(4) {
+  border-right: 1px solid #f1f1f1;
+}
+
+.order-table tr td:last-child{
+    font-size: 0.6rem;
+}
+.order-table tr td.profit{
+    color: rgb(72, 194, 55);
+}
+.order-table tr td.loss{
+    color: rgb(250, 118, 78);
+}
+
+/* holding component  */
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+.col{
+    flex-basis: 33%;
+}
+
+.col h5{
+    font-size: 1.8rem;
+    color: rgb(71, 71, 71);
+    font-weight: 300;
+}
+
+.col p{
+    font-size: 0.8rem;
+    color: rgb(153, 153, 153);
+    font-weight: 300;
+    margin-top: 2%;
+}
+.row .col:last-child h5{
+    color: rgb(72, 194, 55);
+}
+
+.item:hover{
+    cursor: pointer;
+}
+

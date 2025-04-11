@@ -1,10 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Orders() {
     return ( 
 
         <div className="orders">
-            <h1>orders</h1>
+            <div className="no-orders">
+
+            <i class="fa-solid fa-book-open"></i>
+                <p>You haven't placed any orders today</p>
+
+                <Link to={"/"} className='btn'>
+                Get started
+                </Link>
+            </div>
         </div>
 
       );

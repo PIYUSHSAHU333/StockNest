@@ -25,8 +25,7 @@ function Summary() {
               Margins user <span>0</span>
             </p>
             <p>
-              Opening balance <span>3.74k</span>
-            </p>
+              Opening balance <span>3.74k</span></p>
           </div>
         </div>
         <hr className="divider" />

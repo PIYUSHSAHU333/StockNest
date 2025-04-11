@@ -22,8 +22,6 @@ function Dashboard() {
                         <Route path='/positions' element={<Positions/>}></Route>
                         <Route path='/funds' element={<Funds/>}></Route>
                         <Route path='/apps' element={<Apps/>}></Route>
-
-
                     </Routes>
                     
 
