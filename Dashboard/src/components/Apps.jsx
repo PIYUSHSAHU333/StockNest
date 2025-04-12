@@ -2,8 +2,8 @@ import React from 'react';
 
 function Funds() {
     return (
-        <div className="funds">
-            <h1>Funds</h1>
+        <div className="apps">
+            <img src="media/images/comingsoon.jpg" alt="" />
         </div>
       );
 }
