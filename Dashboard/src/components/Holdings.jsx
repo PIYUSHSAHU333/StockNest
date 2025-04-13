@@ -1,9 +1,11 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'
 import { holdings } from '../data/data';
 
 
 function Holdings() {
+
+
     return ( 
         <>
         <h3 className="title">Holdings ({holdings.length})</h3>
