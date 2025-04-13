@@ -12,7 +12,7 @@ const DB_URL = process.env.mongoDB_URL
 const Holdings = require("./models/holdings");
 
 app.use(cors());
-app.use(bodyParser.json)
+app.use(bodyParser.json())
 
 main().then((res =>{
     console.log("Mongoose connect")
@@ -24,8 +24,9 @@ async function main(){
     await mongoose.connect(DB_URL);
 }
 
-app.get("/allHoldings", async(res, res)=>{
+app.get("/allHoldings", async(req, res)=>{
     let allHoldings = await Holdings.find({})
+    console.log(allHoldings)
     res.json(allHoldings);
 })
 
