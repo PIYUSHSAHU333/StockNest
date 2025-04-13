@@ -20,6 +20,10 @@ const holdingSchema = new schema ({
     },
     day:{
         type: String
+    },
+    isLoss: {
+        type: Boolean,
+        default: false
     }
 })
 
