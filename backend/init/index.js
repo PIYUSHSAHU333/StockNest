@@ -1,5 +1,5 @@
-const {holdings} = require("./data");
-const Holdings = require("../models/holdings.js");
+const {positions} = require("./data");
+const Positions = require("../models/positions");
 const mongoose = require("mongoose");
 require("dotenv").config({ path: "../.env"})
 main()
@@ -16,7 +16,7 @@ async function main(){
     await mongoose.connect(process.env.mongoDB_URL);
 }
 async function initDB(){
-    await Holdings.insertMany(holdings);
+    await Positions.insertMany(positions);
     console.log("data initialised");
 }
 
