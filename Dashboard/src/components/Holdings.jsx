@@ -3,15 +3,14 @@ import axios from "axios";
 // import { holdings } from "../data/data";
 
 function Holdings() {
-
   let [allHoldings, setAllHoldings] = useState([]);
 
-  useEffect(()=>{
-    axios.get("http://localhost:8080/allHoldings").then((res)=>{
+  useEffect(() => {
+    axios.get("http://localhost:8080/allHoldings").then((res) => {
       setAllHoldings(res.data);
-      console.log("All holdings")
-    })
-  }, [])
+      console.log("All holdings");
+    });
+  }, []);
 
   return (
     <>

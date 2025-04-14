@@ -277,6 +277,7 @@ color: rgb(73, 73, 73);
 .order-table tr th:first-child,
 .order-table tr td:first-child{
     text-align: left;
+    
 }
 .order-table tr th:nth-child(1),
 .order-table tr th:nth-child(4) {
@@ -485,11 +486,11 @@ color: rgb(73, 73, 73);
 .icon {
     transform: scale(0.7);
     color: rgb(65, 65, 65);
-  }
+}
 
-  .apps{
+.apps{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   

@@ -7,12 +7,14 @@ import Positions from './Positions';
 import Funds from './Funds';
 import Apps from './Apps';
 import Summary from './Summary'
+import {generalContextProvider} from '/Generalcontext';
 function Dashboard() {
     return ( 
         <div className="dashboard-container">
 
+            <generalContextProvider>
                 <Watchlist/>
-                
+            </generalContextProvider>
                 <div className="content" >
                     
                     <Routes>
