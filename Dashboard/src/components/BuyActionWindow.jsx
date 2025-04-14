@@ -1,10 +1,11 @@
 import React, { useContext, useState } from "react";
-import GeneralContext from "/Generalcontext";
+import GeneralContext from "./GenContext";
 import { Link } from "react-router-dom";
 import axios from "axios";
-const generalContext = useContext(GeneralContext);
+import "./BuyActionWindow.css"
 function BuyActionWindow({uid}) {
 
+    const generalContext = useContext(GeneralContext);
     const [stockQuantity, setStockQuantity] = useState(1);
     const [stockPrice, setStockPrice] = useState(0.0)
 

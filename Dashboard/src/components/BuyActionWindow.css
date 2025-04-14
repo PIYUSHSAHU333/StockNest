@@ -1,0 +1,82 @@
+.container {
+  --radius: 4px;
+  background: white;
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  height: 30%;
+  cursor: move;
+  box-sizing: border-box;
+  z-index: 100;
+  border-radius: var(--radius);
+  border: 1px solid rgb(238, 238, 238);
+  box-shadow: 6px 5px 20px black;
+}
+.regular-orders {
+  padding: 16px 26px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.inputs fieldset {
+  max-width: 120px;
+  box-sizing: border-box;
+  border: 0.7px solid #ddd;
+  margin-right: 8px;
+}
+.inputs fieldset legend {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  padding: 0 4px;
+}
+.inputs fieldset:last-of-type legend {
+    color: green;
+}
+.inputs fieldset input {
+    border: none;
+    margin-right: 8px;
+    max-width: 130px;
+    min-height: 35px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+  }
+  .buttons {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+    padding: 0 20px;
+  }
+  
+  .buttons span {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+  
+  .btn-grey {
+    background: #d4d4d4;
+    color: #666666;
+  }
+  
+  .btn-blue {
+    background: #4184f3;
+  }
