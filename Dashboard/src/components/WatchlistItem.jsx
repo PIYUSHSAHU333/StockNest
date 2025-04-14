@@ -36,7 +36,7 @@ const WatchlistActions = ({ uid }) => {
 
   const generalContext = useContext(GeneralContext);
 
-  handleBuCLick = ()=>{
+  handleBuyCLick = ()=>{
     generalContext.openBuyWindow(uid)
   }
 
