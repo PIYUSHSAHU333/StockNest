@@ -7,7 +7,7 @@ import Positions from './Positions';
 import Funds from './Funds';
 import Apps from './Apps';
 import Summary from './Summary'
-import {GeneralContextProvider} from "./temporary";
+import {GeneralContextProvider} from "./GenContext";
 function Dashboard() {
     return ( 
         <div className="dashboard-container">

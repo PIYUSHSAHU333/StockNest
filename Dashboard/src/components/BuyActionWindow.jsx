@@ -15,7 +15,10 @@ function BuyActionWindow({uid}) {
             qty: stockQuantity,
             price: stockPrice,
             mode: "BUY"
-        })
+        });
+        
+        generalContext.closeBuyWindow();
+
     }
     const handleCancelClick = ()=>{
         generalContext.closeBuyWindow();

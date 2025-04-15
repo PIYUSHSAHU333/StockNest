@@ -431,7 +431,7 @@ color: rgb(73, 73, 73);
     margin-right: 8px;
 }
 .item-info span:nth-child(3) {
-    color: rgb(223, 73, 73);
+    /* color: rgb(223, 73, 73); */
     flex: 1;
   }
 .down{

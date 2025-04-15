@@ -3,7 +3,7 @@ import BuyActionWindow from "./BuyActionWindow";
 const GeneralContext = React.createContext(
 {
     openBuyWindow:(uid)=>{},
-    closeBuyWidnow: () =>{}
+    closeBuyWindow: () =>{}
 
 }
 )
@@ -25,7 +25,7 @@ export  const GeneralContextProvider=(props)=>{
     };
 
     return (
-        <GeneralContext.Provider value={{openBuyWindow: hanldeOpenBuyWindow, closeBuyWidnow: handleCloseBuyWindow}}>
+        <GeneralContext.Provider value={{openBuyWindow: hanldeOpenBuyWindow, closeBuyWindow: handleCloseBuyWindow}}>
                 {props.children}
                 {isBuyWindowOpen && <BuyActionWindow uid={selectedStockUid}/> }
         </GeneralContext.Provider>
